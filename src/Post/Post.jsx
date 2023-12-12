@@ -1,11 +1,31 @@
+
+import { useState } from 'react';
+import './Post.css'
+
 const Post = ({name, postBody}) => {
+
+    const [isLiked, setIsLiked] = useState(false);
+    const [isDisliked, setIsDisliked] = useState(false);
+
+    const handleLike = (e) => {
+        setIsLiked(!isLiked)
+        setIsDisliked(false)
+    }
+    const handleDislike = (e) => {
+        setIsDisliked(!isDisliked)
+        setIsLiked(false)
+    }
+
+    const likeBtn = isLiked ? "active-like" : "like"
+    const dislikeBtn = isDisliked ? "active-dislike" : "dislike"
+
     return ( 
-        <div className="Post">
-            <h4>{name}</h4>
+        <div className="post">
+            <h3>{name}</h3>
             <p>{postBody}</p>
-            <div>
-                <p>like</p>
-                <p>dislike</p>
+            <div className='button-container'>
+                <button onClick={handleLike} className={`post-button ${likeBtn}`}></button>
+                <button onClick={handleDislike} className={`post-button ${dislikeBtn}`}></button>
             </div>
         </div>
     );

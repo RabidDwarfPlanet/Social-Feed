@@ -1,0 +1,35 @@
+h3{
+
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid;
+  }
+  .post-button{
+    border: none;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .like{
+    background-image: url(/public/ThumbsUp.png);
+  }
+  .active-like{
+    background-image: url(/public/GreenThumbsUp.png);
+  }
+  .dislike{
+    background-image: url(/public/ThumbsUp.png);
+    transform: scaleY(-1);
+  }
+  .active-dislike{
+    background-image: url(/public/RedThumbsUp.png);
+    transform: scaleY(-1);
+  }
+  .button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+

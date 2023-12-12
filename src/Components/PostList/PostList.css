@@ -1,0 +1,9 @@
+.post-class{
+    background-color: white;
+    margin: 1% 20%;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+}
