@@ -1,3 +1,5 @@
 .App{
-    background-color: rgb(193, 252, 232);
+    background-color: rgb(203, 236, 225);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
 }

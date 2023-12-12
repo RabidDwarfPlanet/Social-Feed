@@ -1,0 +1,41 @@
+.form-class{
+    background-color: white;
+    margin: 1% 20%;
+    padding: 2%;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-contatiner{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    width: 20%;
+    gap: 20px;
+  }
+  .text-container{
+    display: flex;
+    width: 445%;
+    align-items: center;
+    justify-content: space-between;
+  }   
+  label{
+    font-size: 25px;
+    display: flex;
+  }
+  .input{
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-end;
+    width: 85%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  textarea{
+    resize: none;
+  }
+  button{
+    height: 25px;
+    align-self: flex-end;
+  }
