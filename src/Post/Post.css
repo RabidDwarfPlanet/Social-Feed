@@ -5,6 +5,8 @@ h3{
     display: flex;
     flex-direction: column;
     border-top: 1px solid;
+    padding: 0% 2% 2% 2%;
+
   }
   .post-button{
     border: none;
@@ -13,6 +15,12 @@ h3{
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .name{
+    margin-bottom: 5px;
+  }
+  .post-body{
+    margin: 0px 2px;
   }
   .like{
     background-image: url(/public/ThumbsUp.png);

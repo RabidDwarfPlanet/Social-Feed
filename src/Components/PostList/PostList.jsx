@@ -5,7 +5,7 @@ const PostList = ({posts}) => {
     const PostItems = posts.map((post, i) => <Post key={i} name={post.name} postBody={post.postBody}/>)
     return ( 
         <div className="post-class">
-            <h2>Posts</h2>
+            <h2 className="post-header">Posts</h2>
             <div >
                 {PostItems}
             </div>

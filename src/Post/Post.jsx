@@ -21,8 +21,8 @@ const Post = ({name, postBody}) => {
 
     return ( 
         <div className="post">
-            <h3>{name}</h3>
-            <p>{postBody}</p>
+            <h3 className='name'>{name}</h3>
+            <p className='post-body'>{postBody}</p>
             <div className='button-container'>
                 <button onClick={handleLike} className={`post-button ${likeBtn}`}></button>
                 <button onClick={handleDislike} className={`post-button ${dislikeBtn}`}></button>

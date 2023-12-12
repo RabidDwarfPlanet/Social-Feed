@@ -35,7 +35,13 @@
   textarea{
     resize: none;
   }
-  button{
-    height: 25px;
+  .submit{
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    width: 100px;
     align-self: flex-end;
+    background-color: #5bb3c4;
+    border-radius: 12px;
+    border-color: #245963;
 }
