@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './Post.css'
 
-const Post = ({name, postBody}) => {
+const Post = ({post}) => {
 
     const [isLiked, setIsLiked] = useState(false);
     const [isDisliked, setIsDisliked] = useState(false);
@@ -16,17 +16,24 @@ const Post = ({name, postBody}) => {
         setIsLiked(false)
     }
 
+
+
     const likeBtn = isLiked ? "active-like" : "like"
     const dislikeBtn = isDisliked ? "active-dislike" : "dislike"
 
+
     return ( 
         <div className="post">
-            <h3 className='name'>{name}</h3>
-            <p className='post-body'>{postBody}</p>
+            <div className="post-header">
+                <h3 className='name'>{post.name}</h3>
+                <span className='date'>{post.timePosted}</span>
+            </div>
+            <p className='post-body'>{post.postBody}</p>
             <div className='button-container'>
                 <button onClick={handleLike} className={`post-button ${likeBtn}`}></button>
                 <button onClick={handleDislike} className={`post-button ${dislikeBtn}`}></button>
             </div>
+
         </div>
     );
 }

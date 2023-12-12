@@ -8,7 +8,7 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   const handleNewPost = (newPost) => {
-    const updatedPosts = [...posts, newPost];
+    const updatedPosts = [newPost, ...posts];
     setPosts(updatedPosts);
   };
 

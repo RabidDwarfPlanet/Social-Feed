@@ -17,7 +17,7 @@ h3{
     background-repeat: no-repeat;
   }
   .name{
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
   .post-body{
     margin: 0px 2px;
@@ -39,5 +39,16 @@ h3{
   .button-container{
     display: flex;
     justify-content: flex-end;
-}
+  }
+  .post-header{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .date{
+    font-size: 10px;
+    padding-bottom: 1px;
+  }
+
 
