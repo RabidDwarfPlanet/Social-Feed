@@ -1,9 +1,10 @@
 import Post from "../../Post/Post";
 
-const PostList = ({}) => {
+const PostList = ({posts}) => {
+    const PostItems = posts.map((post, i) => <Post key={i} name={post.name} postBody={post.postBody}/>)
     return ( 
         <div>
-            <Post/>
+            {PostItems}
         </div>
     );
 }
