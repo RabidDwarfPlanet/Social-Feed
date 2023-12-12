@@ -1,7 +1,9 @@
+import './Header.css'
+
 const Header = ({}) => {
     return ( 
         <header>
-            <h1>SocialFeed</h1>
+            <span className="headerText">Social</span><span className="headerText feed">Feed</span>
         </header>
     );
 }
